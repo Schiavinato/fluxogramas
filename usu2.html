@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function enquanto() {
+    var login;
+    var senha;
+    var loop;
+    
+    loop = true;
+    while (loop == true) {
+        login = window.prompt('Enter a value for login');
+        senha = window.prompt('Enter a value for senha');
+        if (login == "nicolinhas") {
+            if (senha == "schiavinato") {
+                window.alert("seja bem vindo!");
+                loop = false;
+            }
+        } else {
+            window.alert("usuário ou senha incorreta, tente novamente");
+        }
+    }
+}
+
+function faca() {
+    var login;
+    var senha;
+    var loop;
+    
+    loop = true;
+    do {
+        login = window.prompt('Enter a value for login');
+        senha = window.prompt('Enter a value for senha');
+        if (login == "nicolinhas") {
+            if (senha == "schiavinato") {
+                window.alert("seja bem vindo!");
+                loop = false;
+            }
+        } else {
+            window.alert("usuário ou senha incorreta, tente novamente");
+        }
+    } while (loop == true);
+}
+
+
+    </script>
+    <button onclick="enquanto()"> login enquanto </button>
+    <button onclick="faca()"> login faca </button>
+</body>
+</html>
